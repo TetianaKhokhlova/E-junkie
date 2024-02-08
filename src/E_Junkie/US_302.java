@@ -93,6 +93,7 @@ public class US_302 {
         String expectedMessage = "Invalid Email\n" + "Invalid Email\n" + "Invalid Billing Name";
         Assert.assertEquals(expectedMessage, actualMessage);
         myWait(1);
+
     }
 
     @After
