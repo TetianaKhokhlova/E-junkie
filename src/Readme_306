@@ -1,0 +1,25 @@
+-Contact Form Automation
+
+This project is an automated testing solution designed to interact
+with a contact form on a website.
+Utilizing Selenium WebDriver, the automation script navigates to the homepage,
+locates and clicks the "Contact Us" button,
+fills out the contact form with predefined details,
+attempts to submit the form, and verifies the display of a "Recaptcha Didn't Match" alert.
+This project serves as a proof of concept for automated UI testing,
+specifically for form submission and captcha validation feedback.
+
+-Project Description
+
+ Automate the process of filling out a contact form and verifying captcha alert.
+  -Technologies Used:
+  - Java Development Kit : Version 21
+  - Selenium WebDriver: For browser automation
+
+
+-Collaborators
+
+- [Hanna Kvitko](https://github.com/HannaKvitko)
+
+- Running the Project
+
