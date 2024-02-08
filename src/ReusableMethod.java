@@ -3,7 +3,7 @@ public class ReusableMethod {
 
     }
 
-    public void myWait(int sec) {
+    public static void myWait(int sec) {
         try {
             Thread.sleep(sec * 1000);
         } catch (InterruptedException e) {
