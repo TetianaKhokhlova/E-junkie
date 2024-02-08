@@ -1,3 +1,5 @@
+package E_Junkie;
+
 public class ReusableMethod {
     public class ReusableMethods {
 
