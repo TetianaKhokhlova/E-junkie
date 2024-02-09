@@ -70,17 +70,17 @@ public class US_303UnsuccessfulPayment {
         WebElement iFrameCCDetails = driver.findElement(By.xpath("(//iframe[@allow='payment *'])[2]"));
         driver.switchTo().frame(iFrameCCDetails);
         reusableMethod.myWait(1);
-        // Credit Card Details
-        WebElement creditCardDetailsTextBox = driver.findElement(By.xpath("//input[@placeholder='Kartennummer']"));
+        // Credit Card Details//input[@placeholder='Kartennummer']
+        WebElement creditCardDetailsTextBox = driver.findElement(By.xpath("//input[@name='cardnumber']"));
         creditCardDetailsTextBox.sendKeys("1111 1111 1111 1111");
         reusableMethod.myWait(1);
 
-        // Credit Card MM/JJ
-        WebElement creditCardDate = driver.findElement(By.xpath("//input[@placeholder='MM/JJ']"));
+        // Credit Card MM/JJ//input[@placeholder='MM/JJ']
+        WebElement creditCardDate = driver.findElement(By.xpath("//input[@name='exp-date']"));
         creditCardDate.sendKeys("11/22");
 
-        // Credit Card CVV
-        WebElement cvvNumber = driver.findElement(By.xpath("//input[@placeholder='Prüfziffer']"));
+        // Credit Card CVV//input[@placeholder='Prüfziffer']
+        WebElement cvvNumber = driver.findElement(By.xpath("//input[@name='cvc']"));
         //send keys and put enter after Tab to pay button
         cvvNumber.sendKeys("030"+ Keys.TAB+Keys.ENTER);
         reusableMethod.myWait(1);
