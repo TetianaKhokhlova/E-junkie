@@ -3,12 +3,13 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
 public class US_303UnsuccessfulPayment {
-    WebDriver driver;
+    WebDriver driver = new ChromeDriver();
     ReusableMethod reusableMethod = new ReusableMethod();
 
     @Before
